@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "University of Arizona"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "1657 E. Helen Str."      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+instructor: ["Connor Osborn"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["t.b.d."]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["hilgert@email.arizona.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -88,8 +88,10 @@ and the administrator will contact you if we need any extra information.</h4>
 <p id="who">
   <strong>Who:</strong>
   The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+  This workshop targets semi-novice users and will focus on tracking and sharing work using the version control systems git and GitHub. Workshop times are 8:30 AM-12:00 PM.
+  Participants are required to bring their own laptop. Some level of familiarity with the command line, inlcuding generating files and editing them is being expected; this course is not designed to teach participants how to use the command line/Shell/bash/Unix.
+  If necessary, please refresh your knowledge at https://software-carpentry.org/lessons/ or equivalent resources.
+  Participants will also have to have a GitHub (github.com) account and need to have git installed on their laptops. (To install an up-to-date version of git scroll to Setup below and follow the instructions under The Bash Shell)
 </p>
 
 <!--
@@ -132,7 +134,7 @@ and the administrator will contact you if we need any extra information.</h4>
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  on. They should have a GitHub account and a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
@@ -154,9 +156,7 @@ and the administrator will contact you if we need any extra information.</h4>
   <li>Accessible restrooms are available.</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
+  If we can help making learning easier for
   you (e.g. sign-language interpreters, lactation facilities) please
   <a href="mailto:{{page.contact}}">get in touch</a> and we will
   attempt to provide them.
@@ -204,6 +204,7 @@ and the administrator will contact you if we need any extra information.</h4>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 
+<!--
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
@@ -228,6 +229,7 @@ and the administrator will contact you if we need any extra information.</h4>
     </table>
   </div>
 </div>
+-->
 
 <!--
   ETHERPAD
@@ -273,7 +275,7 @@ and the administrator will contact you if we need any extra information.</h4>
 <h2 id="syllabus">Syllabus</h2>
 
 <div class="row">
-  <div class="col-md-6">
+<!--  <div class="col-md-6">
     <h3 id="syllabus-shell">The Unix Shell</h3>
     <ul>
       <li>Files and directories</li>
@@ -298,6 +300,7 @@ and the administrator will contact you if we need any extra information.</h4>
       <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
+-->
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
@@ -339,20 +342,6 @@ and the administrator will contact you if we need any extra information.</h4>
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
     </ul>
   </div>
 </div>
@@ -593,11 +582,13 @@ and the administrator will contact you if we need any extra information.</h4>
   </div>
 </div> <!-- End of 'editor' section. -->
 
+<!--
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
            Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
-  <h3>Python</h3>
+<!--
+<h3>Python</h3>
 
   <p>
     <a href="http://python.org">Python</a> is a popular language for
@@ -676,6 +667,7 @@ and the administrator will contact you if we need any extra information.</h4>
       </ol>
     </div>
   </div>
+-->
 <!--
   <p>
   Once you are done installing the software listed above,
@@ -684,9 +676,9 @@ and the administrator will contact you if we need any extra information.</h4>
   </p>
 -->
 </div> <!-- End of 'Python' section. -->
-
+<!--
 <div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
+<!--  <h3>R</h3>
 
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
@@ -734,10 +726,13 @@ and the administrator will contact you if we need any extra information.</h4>
       </p>
     </div>
   </div>
-</div> <!-- End of 'R' section. -->
-
+</div>
+-->
+<!-- End of 'R' section. -->
+<!--
 <div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
+
+<!--<h3>SQLite</h3>
 
   <p>
     SQL is a specialized programming language used with databases.  We
@@ -771,7 +766,9 @@ and the administrator will contact you if we need any extra information.</h4>
   <p><strong>If you installed Anaconda, it also has a copy of SQLite
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
+</div>
+-->
+<!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
